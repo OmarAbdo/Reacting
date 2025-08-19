@@ -1,0 +1,42 @@
+[
+  {
+    "review_id": 1,
+    "employee_id": 1,
+    "review_date": "2023-01-15",
+    "reviewer": "Alice Brown",
+    "rating": 4,
+    "comments": "John consistently delivers high-quality code and is a great team player."
+  },
+  {
+    "review_id": 2,
+    "employee_id": 2,
+    "review_date": "2023-01-20",
+    "reviewer": "Bob White",
+    "rating": 5,
+    "comments": "Jane has exceeded all her marketing targets for the last quarter."
+  },
+  {
+    "review_id": 3,
+    "employee_id": 3,
+    "review_date": "2023-01-22",
+    "reviewer": "Charlie Green",
+    "rating": 3,
+    "comments": "Peter is a consistent performer but needs to improve his closing rate."
+  },
+  {
+    "review_id": 4,
+    "employee_id": 4,
+    "review_date": "2023-01-18",
+    "reviewer": "Alice Brown",
+    "rating": 4,
+    "comments": "Mary has a great eye for detail and has significantly improved our testing processes."
+  },
+  {
+    "review_id": 5,
+    "employee_id": 1,
+    "review_date": "2023-07-15",
+    "reviewer": "Alice Brown",
+    "rating": 5,
+    "comments": "John took the lead on a critical project and delivered outstanding results."
+  }
+]

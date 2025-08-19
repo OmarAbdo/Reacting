@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "department": "Engineering",
+    "position": "Software Engineer"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "department": "Marketing",
+    "position": "Marketing Manager"
+  },
+  {
+    "id": 3,
+    "name": "Peter Jones",
+    "department": "Sales",
+    "position": "Sales Representative"
+  },
+  {
+    "id": 4,
+    "name": "Mary Williams",
+    "department": "Engineering",
+    "position": "QA Engineer"
+  }
+]
