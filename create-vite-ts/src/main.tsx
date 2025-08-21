@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import Layout from "./components/layout.tsx";
 import Home from "./pages/home.tsx";
 import Employees from "./pages/employees.tsx";
+import Employlee from "./pages/employee.tsx";
 import About from "./pages/about.tsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "employees",
         element: <Employees />,
+      },
+      {
+        path: "employees/:id",
+        element: <Employlee />,
       },
       {
         path: "about",
