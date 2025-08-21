@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Layout from "./components/layout.tsx";
 import Home from "./pages/home.tsx";
 import Employees from "./pages/employees.tsx";
 import About from "./pages/about.tsx";
@@ -10,15 +11,21 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/employees",
-    element: <Employees />,
-  },
-  {
-    path: "/about",
-    element: <About />,
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "employees",
+        element: <Employees />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+    ],
   },
 ]);
 
