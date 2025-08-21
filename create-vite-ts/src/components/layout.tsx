@@ -8,7 +8,7 @@ export default function Layout() {
     return () => {
       console.log("This layout component has unmounted");
     };
-  });
+  }, []); // Empty dependency array means this effect runs once when the component mounts
   return (
     <div>
       <header>
