@@ -7,6 +7,7 @@ import Employlee from "./pages/employee.tsx";
 import About from "./pages/about.tsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
+import { getEmployeeById, getEmployees } from "./service/api/employee.ts";
 
 // Routes are configured as the first argument to createBrowserRouter. At a minimum, you need a path and component:
 const router = createBrowserRouter([
@@ -20,10 +21,19 @@ const router = createBrowserRouter([
       },
       {
         path: "employees",
+        loader: async () => {
+          return await getEmployees();
+        },
         element: <Employees />,
       },
       {
         path: "employees/:id",
+        loader: async ({ params }) => {
+          if (!params.id) {
+            throw new Error("Error");
+          }
+          return await getEmployeeById(params.id);
+        },
         element: <Employlee />,
       },
       {

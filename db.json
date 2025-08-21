@@ -27,44 +27,44 @@
   ],
   "goals": [
     {
-      "goal_id": 1,
+      "id": 1,
       "employee_id": 1,
-      "goal_description": "Complete the new feature for Project X",
+      "description": "Complete the new feature for Project X",
       "status": "In Progress",
       "due_date": "2023-03-31"
     },
     {
-      "goal_id": 2,
+      "id": 2,
       "employee_id": 2,
-      "goal_description": "Increase social media engagement by 20%",
+      "description": "Increase social media engagement by 20%",
       "status": "Completed",
       "due_date": "2023-02-28"
     },
     {
-      "goal_id": 3,
+      "id": 3,
       "employee_id": 3,
-      "goal_description": "Close 10 new deals in Q1",
+      "description": "Close 10 new deals in Q1",
       "status": "In Progress",
       "due_date": "2023-03-31"
     },
     {
-      "goal_id": 4,
+      "id": 4,
       "employee_id": 4,
-      "goal_description": "Automate the regression testing suite",
+      "description": "Automate the regression testing suite",
       "status": "Not Started",
       "due_date": "2023-04-30"
     },
     {
-      "goal_id": 5,
+      "id": 5,
       "employee_id": 1,
-      "goal_description": "Refactor the authentication module",
+      "description": "Refactor the authentication module",
       "status": "Completed",
       "due_date": "2023-08-31"
     }
   ],
   "performance_reviews": [
     {
-      "review_id": 1,
+      "id": 1,
       "employee_id": 1,
       "review_date": "2023-01-15",
       "reviewer": "Alice Brown",
@@ -72,7 +72,7 @@
       "comments": "John consistently delivers high-quality code and is a great team player."
     },
     {
-      "review_id": 2,
+      "id": 2,
       "employee_id": 2,
       "review_date": "2023-01-20",
       "reviewer": "Bob White",
@@ -80,7 +80,7 @@
       "comments": "Jane has exceeded all her marketing targets for the last quarter."
     },
     {
-      "review_id": 3,
+      "id": 3,
       "employee_id": 3,
       "review_date": "2023-01-22",
       "reviewer": "Charlie Green",
@@ -88,7 +88,7 @@
       "comments": "Peter is a consistent performer but needs to improve his closing rate."
     },
     {
-      "review_id": 4,
+      "id": 4,
       "employee_id": 4,
       "review_date": "2023-01-18",
       "reviewer": "Alice Brown",
@@ -96,7 +96,7 @@
       "comments": "Mary has a great eye for detail and has significantly improved our testing processes."
     },
     {
-      "review_id": 5,
+      "id": 5,
       "employee_id": 1,
       "review_date": "2023-07-15",
       "reviewer": "Alice Brown",

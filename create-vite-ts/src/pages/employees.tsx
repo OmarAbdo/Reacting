@@ -1,23 +1,8 @@
-import { useEffect, useState } from "react";
-import { getEmployees } from "../service/api/employee";
 import { Employee } from "../types";
+import { useLoaderData } from "react-router";
 
 export default function Employees() {
-  const [employees, setEmployees] = useState<Employee[]>([]);
-
-  useEffect(() => {
-    const employeeList = async () => {
-      let data;
-      try {
-        data = await getEmployees();
-        setEmployees(data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    employeeList();
-  }, []);
+  const employees = useLoaderData<Employee[]>();
 
   return (
     <div>
