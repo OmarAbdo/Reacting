@@ -1,0 +1,21 @@
+BE Emp.information
+------------------
+
+
+
+
+
+Dashboard?
+Present the data with optimized performance
+((Technical questions))
+> Data schema? DTOs for requests and responses
+> How to fetch? when to cache? and when to invalidate the cache?
+> After fetching, how to keep the data? a state? (on what level)? browser storage? memory storage? persistant storage?
+> App performance. component props and re-rendering. memory consumption, loading/rendering time
+> computational efforts: time complexity? improvements?
+
+((user oriented questions))
+> are we building a for HR manager who's going to see and maybe edit everyone? or are we building for the indivdual users? in other words what does the user gets to do in terms of functions and CRUD operations 
+
+
+
