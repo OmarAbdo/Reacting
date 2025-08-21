@@ -16,8 +16,8 @@ export const getEmployees = async (): Promise<Employee[]> => {
 
 export const getEmployeeById = async (id: string): Promise<Employee> => {
     try {
-        const response = await axios.get<Employee>(`${API_BASE_URL}/${id}`);
-        return response.data;
+        const response = await axios.get<Employee[]>(`${API_BASE_URL}?id=${id}`);
+        return response.data[0];
     } catch (error) {
         console.error('Error fetching employee by ID:', error);
         throw error;
