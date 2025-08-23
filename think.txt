@@ -19,3 +19,44 @@ Present the data with optimized performance
 
 
 
+
+
+
+
+
+import {} VS import 
+TS's generics
+Arrow Functions & Higher-Order Functions
+
+
+So in react, the life cycle is just mount -> update -> unmount
+component render vs mounting
+
+nullish coalescing operator  ?? vs normal ?
+
+
+Think Stackholder
+Customers (Who's the customer? their journey? the UX their famailir with, ..etc)
+Us (Frontend concerns) (Managing data, Managing performance, Components architecture, ...etc)
+ALSO US: Develop with clean architecture and DDD for REACT
+Backend concerns (Shared Schemas and DTOs, ...etc)
+Future (Scalability, Testability, Readability, Maintainability ABCability) 
+
+pnpm i react-hook-form
+pnpm i @hookform/resolvers
+pnpm i zod
+
+
+useState
+userReducer
+Context API
+Zustand
+Redux/Mobex
+
+HTTP caching headers (ETag, Cache-Control), and database-level caching. A well-configured Cache-Control header can eliminate huge classes of client-side problems before they even start.
+
+the 'users', 'posts', 'orders'. The key insight here is that this cache is normalized and disconnected from the UI.
+
+
+
+

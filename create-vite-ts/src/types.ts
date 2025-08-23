@@ -9,6 +9,12 @@ export type Employee = {
 // type employee list
 export type EmployeeList = Employee[];
 
+export type CreateEmployeeType = {
+    name: string;
+    position: string;
+    department: string;
+}
+
 // type goal 
 export type Goal = {
     id: number;

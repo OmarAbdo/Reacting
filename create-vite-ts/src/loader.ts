@@ -6,8 +6,8 @@ import { getEmployees } from "./service/api/employee";
 // This is using a currying pattern - the outer function receives dependencies,
 // and the inner function is the actual loader that React Router will call.
 // currying is breaking down a function that takes multiple arguments into a sequence of functions that each take a single argument.
-export const employeeLoader = (queryClient: QueryClient) => async () => {
-    console.log("employeeLoader called");
+export const employeesLoader = (queryClient: QueryClient) => async () => {
+    console.log("employeesLoader called");
     const queryKey = ["employees"];
     // Check if the data is already cached in the queryClient
     console.log("Checking cache for employees");

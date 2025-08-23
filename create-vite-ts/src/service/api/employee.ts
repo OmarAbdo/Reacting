@@ -1,5 +1,5 @@
-import axios from 'axios';
-import { Employee } from '../../types';
+import axios, { AxiosResponse } from 'axios';
+import { Employee, CreateEmployeeType } from '../../types';
 
 const API_BASE_URL = 'http://localhost:3000/employees';
 
@@ -24,10 +24,10 @@ export const getEmployeeById = async (id: string): Promise<Employee> => {
     }
 }
 
-export const addEmployee = async (employee: Employee): Promise<Employee> => {
+export const addEmployee = async (employee: CreateEmployeeType): Promise<AxiosResponse> => {
     try {
-        const response = await axios.post<Employee>(API_BASE_URL, employee);
-        return response.data;
+        const response = await axios.post<CreateEmployeeType>(API_BASE_URL, employee);
+        return response;
     } catch (error) {
         console.error('Error adding employee:', error);
         throw error;

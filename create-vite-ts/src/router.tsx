@@ -4,9 +4,13 @@ import Home from "./pages/home.tsx";
 import Employees from "./pages/employees.tsx";
 import Employlee from "./pages/employee.tsx";
 import About from "./pages/about.tsx";
-import { QueryClient } from "@tanstack/react-query";
+import Admin from "./pages/admin.tsx";
 import { getEmployeeById } from "./service/api/employee.ts";
-import { employeeLoader } from "./loader.ts";
+import { employeesLoader } from "./loader.ts";
+import { QueryClient } from "@tanstack/react-query";
+
+export const queryClient = new QueryClient();
+
 // Routes are configured as the first argument to createBrowserRouter. At a minimum, you need a path and component:
 export const router = createBrowserRouter([
   {
@@ -19,7 +23,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "employees",
-        loader: employeeLoader(new QueryClient()),
+        loader: employeesLoader(queryClient),
         element: <Employees />,
       },
       {
@@ -35,6 +39,11 @@ export const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "admin",
+        loader: employeesLoader(queryClient),
+        element: <Admin />,
       },
     ],
   },
